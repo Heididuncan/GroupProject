@@ -6,9 +6,9 @@ public class RegisteredUser {
 	private String firstName;
 	private String lastName;
     private String email;
-    private long cardNum;
+    private String cardNum;
 
-    public RegisteredUser(String userName, String firstName, String lastName, String email, long cardNum){
+    public RegisteredUser(String userName, String firstName, String lastName, String email, String cardNum){
         this.id = UUID.randomUUID();
         this.userName = userName;
         this.firstName = firstName;
@@ -16,7 +16,7 @@ public class RegisteredUser {
         this.cardNum = cardNum;
     }
 
-    public RegisteredUser(UUID id, String userName, String firstName, String lastName, String email, long cardNum){
+    public RegisteredUser(UUID id, String userName, String firstName, String lastName, String email, String cardNum){
         this.id = id;
         this.userName = userName;
         this.firstName = firstName;
@@ -53,10 +53,10 @@ public class RegisteredUser {
     public String getEmail(){
         return email;
     }
-    public void setCardNum(long cardNum){
+    public void setCardNum(String cardNum){
         this.cardNum = cardNum;
     }
-    public long getCardNum(){
+    public String getCardNum(){
         return cardNum;
     }
 

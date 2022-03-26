@@ -39,7 +39,7 @@ public class UserList {
 		return userList;
 	}
 	
-	public boolean addUser(String userName, String firstName, String lastName, String email, long cardNum) {
+	public boolean addUser(String userName, String firstName, String lastName, String email, String cardNum) {
 		if(haveUser(userName))return false;
 		
 		userList.add(new RegisteredUser(userName, firstName, lastName, email, cardNum));
